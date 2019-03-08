@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --watch build ./build/index.js --exec babel-node",
-    "build": "nodemon --ext ts --watch ./src/ --ignore node_modules/ --ignore .git --ignore build/ --exec tsc",
-    "prepublish": "npm run build"
+    "build": "nodemon --ext ts --watch ./src/ --ignore node_modules/ --ignore .git --ignore build/ --exec tsc"
   },
   "nyc": {
     "include": [
