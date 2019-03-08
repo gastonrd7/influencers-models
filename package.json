@@ -1,0 +1,54 @@
+{
+  "name": "influencers-models",
+  "version": "1.0.0",
+  "description": "influencers models",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch build ./build/index.js --exec babel-node",
+    "build": "nodemon --ext ts --watch ./src/ --ignore node_modules/ --ignore .git --ignore build/ --exec tsc"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gastonrd7/influencers-models.git"
+  },
+  "keywords": [
+    "influencers-models"
+  ],
+  "author": "RuizDiaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gastonrd7/influencers-models/issues"
+  },
+  "homepage": "https://github.com/gastonrd7/influencers-models#readme",
+  "devDependencies": {
+    "mongoose": "^5.4.17",
+    "mongoose-validator": "^2.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "nodemon": "^1.18.4",
+    "typescript": "^3.1.3",
+    "nyc": "^13.1.0",
+    "reflect-metadata": "^0.1.12"
+  }
+}
