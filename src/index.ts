@@ -1,1 +1,5 @@
-let hoal = "hola";
+const ejemplo = {
+    a: "hola"
+}
+
+export default ejemplo;
