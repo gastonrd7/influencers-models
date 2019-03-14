@@ -269,6 +269,7 @@ enum postFields {
     companyId = "companyId",
     platform = "platform",
     postPlatformId = "postPlatformId",
+    postPlatformFeed = "postPlatformFeed",
     creationDt = "creationDt",
     feedDt = "feedDt",
     feedStatus = "feedStatus",
