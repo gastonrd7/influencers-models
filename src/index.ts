@@ -22,7 +22,8 @@ enum Model {
     permission_role = "permission_role",
     permission = "permission",
     person_company = "person_company",
-    role = "role"
+    role = "role",
+    person_credential = "person_credential"
 }
 
 enum appTypes {
@@ -41,7 +42,7 @@ enum permission_roleFields {
 
 enum permissionFields {
     _id = "_id",
-    platform = "platform",
+    app = "app",
     permission = "permission",
     description = "description",
     enabled = "enabled",
@@ -371,6 +372,24 @@ enum resourceTypeEnum {
     spot = "spot"
 }
 
+enum person_credentialFields {
+    _id = "_id",
+    personId = "personId",
+    platform = "platform",
+    platformObjectId = "platformObjectId",
+    status = "status",
+    access_token = "access_token",
+    expires = "expires",
+    userName = "userName",
+    password = "password",
+    picture = "picture",
+    birthday = "birthday",
+    firstName = "firstName",
+    lastName = "lastName",
+    email = "email",
+    creationDt = "creationDt"
+}
+
 enum companyFields {
     companyId = "companyId",
     name = "name",
@@ -586,6 +605,7 @@ enum personFields {
     _id = "_id",
     username = "username",
     password = "password",
+    roleIds = "roleIds",
     firstName = "firstName",
     lastName = "lastName",
     email = "email",
@@ -667,5 +687,6 @@ export {
     campaignTypeEnum,
     campaignPaymentTypeEnum,
     personFields,
-    appTypeEnum
+    appTypeEnum,
+    person_credentialFields
 };
