@@ -613,6 +613,7 @@ enum personFields {
     religion = "religion",
     thumbnail = "thumbnail",
     genre = "genre",
+    genderId = "genderId",
     birthDateYear = "birthDateYear",
     birthDateMonth = "birthDateMonth",
     birthDateDay = "birthDateDay",
