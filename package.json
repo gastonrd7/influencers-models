@@ -1,6 +1,6 @@
 {
   "name": "influencers-models",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "influencers models",
   "main": "build/index.js",
   "scripts": {
@@ -34,7 +34,7 @@
   "keywords": [
     "influencers-models"
   ],
-  "author": "RuizDiaz",
+  "author": "RuizDiaz", 
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gastonrd7/influencers-models/issues"
