@@ -23,7 +23,8 @@ enum Model {
     permission = "permission",
     person_company = "person_company",
     role = "role",
-    person_credential = "person_credential"
+    person_credential = "person_credential",
+    people_relationship = "people_relationship"
 }
 
 enum appTypes {
@@ -411,6 +412,14 @@ enum companyFields {
     
 }
 
+enum people_relationshipFields {
+    _id = "_id",
+    personId = "personId",
+    targetPersonId = "targetPersonId",
+    platform = "platform",
+    creationDt = "creationDt"
+}
+
 enum campaignFields {
     _id = "_id",
     companyId = "companyId",
@@ -457,6 +466,7 @@ enum campaignFields {
     advertisingEffectivenessCriteriaUpdatedDt = "advertisingEffectivenessCriteriaUpdatedDt",
     categoryCriteriaUpdatedDt = "categoryCriteriaUpdatedDt",
     endDt = "endDt",
+    startDt = "startDt",
     active = "active",
     status = "status",
     investment = "investment",
@@ -691,5 +701,6 @@ export {
     campaignPaymentTypeEnum,
     personFields,
     appTypeEnum,
-    person_credentialFields
+    person_credentialFields,
+    people_relationshipFields
 };
