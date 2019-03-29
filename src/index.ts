@@ -339,10 +339,10 @@ enum insightFields {
     campaignId = "campaignId",
     companyId = "companyId",
     genre = "genre",
+    genderId = "genderId",
     birthDateYear = "birthDateYear",
     birthDateMonth = "birthDateMonth",
     birthDateDay = "birthDateDay",
-    engagedObject = "engagedObject",
     type = "type",
     creationDt = "creationDt",
 }
