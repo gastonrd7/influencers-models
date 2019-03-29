@@ -415,9 +415,23 @@ enum companyFields {
 enum people_relationshipFields {
     _id = "_id",
     personId = "personId",
-    targetPersonId = "targetPersonId",
+    person_credentialId = "person_credentialId",
     platform = "platform",
+    relationship = "relationship",
     creationDt = "creationDt"
+}
+
+enum people_relationshipEnum {
+    FRIEND_OF = "FRIEND_OF",
+    FOLLOWS_TO = "FOLLOWS_TO",
+    FOLLOWED_BY = "FOLLOWED_BY"
+
+
+}
+
+enum campaignInfluencePeopleAsEnum {
+    IR = "IR",
+    ID = "ID"
 }
 
 enum campaignFields {
@@ -426,6 +440,8 @@ enum campaignFields {
     name = "name",
     brief = "brief",
     specificTarget = "specificTarget",
+    influencePeopleAs = "influencePeopleAs",
+    influencerPerEachOfThem = "influencerPerEachOfThem",
     followers = "followers",
     type = "type",
     paymentType = "paymentType",
@@ -481,6 +497,8 @@ enum campaignFields {
     engagementVelocityExpected = "engagementVelocityExpected",
     forecastDays = "forecastDays",
     influencersScope = "influencersScope",
+    influencedScopeCount = "influencedScopeCount",
+    influencedExtraScopeCount = "influencedExtraScopeCount",
     influencersScopeCount = "influencersScopeCount",
     engagementScopeCount = "engagementScopeCount",
     influencersScopeAll = "influencersScopeAll",
@@ -702,5 +720,7 @@ export {
     personFields,
     appTypeEnum,
     person_credentialFields,
-    people_relationshipFields
+    people_relationshipFields,
+    people_relationshipEnum,
+    campaignInfluencePeopleAsEnum
 };
