@@ -337,6 +337,7 @@ enum insightFields {
     platform = "platform",
     advertisementId = "advertisementId",
     campaignId = "campaignId",
+    person_credentialId = "person_credentialId",
     companyId = "companyId",
     genre = "genre",
     genderId = "genderId",
@@ -594,13 +595,6 @@ enum itemMoment {
     value = "value" 
 }
 
-enum engagedObject {
-    genre = "genre", 
-    birthDateYear = "birthDateYear",
-    birthDateMonth = "birthDateMonth", 
-    birthDateDay = "birthDateDay"
-}
-
 enum genreType {
     Male = "Male",
     Female = "Female" 
@@ -713,7 +707,6 @@ export {
     campaignFields,
     campaignSpecificTargetScopeFields,
     itemMoment,
-    engagedObject,
     genreType,
     coordinate,
     campaignStatusEnum,
