@@ -664,6 +664,8 @@ enum personFields {
     advertisingEffectiveness = "advertisingEffectiveness",
     advertisingFreezedBudgetReference = "advertisingFreezedBudgetReference",
     advertisingEffectivenessReference = "advertisingEffectivenessReference",
+    countryId = "countryId",
+    stateId = "stateId",
     address_regionId = "address_regionId",
     address_street = "address_street",
     address_postalCode = "address_postalCode",
