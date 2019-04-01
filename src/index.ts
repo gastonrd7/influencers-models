@@ -337,7 +337,7 @@ enum insightFields {
     platform = "platform",
     advertisementId = "advertisementId",
     campaignId = "campaignId",
-    person_credentialId = "person_credentialId",
+    platformObjectId = "platformObjectId",
     companyId = "companyId",
     genre = "genre",
     genderId = "genderId",
