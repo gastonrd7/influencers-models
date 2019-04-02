@@ -322,6 +322,26 @@ enum postFields {
     instagramCommentCount = "instagramCommentCount",
 }
 
+enum socialMediaStatusEnum {
+    None = "None", 
+    Posting = "Posting", 
+    Posted = "Posted", 
+    Failed = "Failed", 
+    Removed = "Removed", 
+
+}
+
+enum postFeedStatusEnum {
+    Idle = "Idle",
+    Fetching = "Fetching"
+}
+
+enum postPlatformEnum {
+    Facebook = "Facebook",
+    Instagram = "Instagram",
+    Twitter = "Twitter"
+}
+
 enum historicFields {
     _id = "_id",
     model = "model",
@@ -698,6 +718,8 @@ export {
     advertisingEffectivenessFields,
     advertisementFields,
     postFields,
+    postFeedStatusEnum,
+    postPlatformEnum,
     historicFields,
     insightFields,
     insightPlatformEnum,
@@ -717,5 +739,6 @@ export {
     person_credentialFields,
     people_relationshipFields,
     people_relationshipEnum,
-    campaignInfluencePeopleAsEnum
+    campaignInfluencePeopleAsEnum,
+    socialMediaStatusEnum
 };
