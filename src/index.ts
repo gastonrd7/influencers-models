@@ -322,6 +322,15 @@ enum postFields {
     instagramCommentCount = "instagramCommentCount",
 }
 
+enum socialMediaStatusEnum {
+    None = "None", 
+    Posting = "Posting", 
+    Posted = "Posted", 
+    Failed = "Failed", 
+    Removed = "Removed", 
+
+}
+
 enum postFeedStatusEnum {
     Idle = "Idle",
     Fetching = "Fetching"
@@ -730,5 +739,6 @@ export {
     person_credentialFields,
     people_relationshipFields,
     people_relationshipEnum,
-    campaignInfluencePeopleAsEnum
+    campaignInfluencePeopleAsEnum,
+    socialMediaStatusEnum
 };
