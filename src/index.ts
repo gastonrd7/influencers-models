@@ -322,6 +322,17 @@ enum postFields {
     instagramCommentCount = "instagramCommentCount",
 }
 
+enum postFeedStatusEnum {
+    Idle = "Idle",
+    Fetching = "Fetching"
+}
+
+enum postPlatformEnum {
+    Facebook = "Facebook",
+    Instagram = "Instagram",
+    Twitter = "Twitter"
+}
+
 enum historicFields {
     _id = "_id",
     model = "model",
@@ -698,6 +709,8 @@ export {
     advertisingEffectivenessFields,
     advertisementFields,
     postFields,
+    postFeedStatusEnum,
+    postPlatformEnum,
     historicFields,
     insightFields,
     insightPlatformEnum,
