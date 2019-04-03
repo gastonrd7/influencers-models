@@ -400,6 +400,8 @@ enum person_credentialFields {
     _id = "_id",
     personId = "personId",
     platform = "platform",
+    friendsFeedDt = "friendsFeedDt",
+    friendsFeedStatus = "friendsFeedStatus",
     platformObjectIdentity = "platformObjectIdentity",
     status = "status",
     access_token = "access_token",
@@ -412,6 +414,25 @@ enum person_credentialFields {
     lastName = "lastName",
     email = "email",
     creationDt = "creationDt"
+}
+
+enum person_credential_fiendsFeedStatusEnum {
+    Idle = "Idle",
+    Fetching = "Fetching"
+}
+
+enum person_credential_statusEnum {
+    NOT_LINKED = "NOT_LINKED",
+    LINKING = "LINKING",
+    LINKED = "LINKED",
+    FAILED = "FAILED",
+    EXPIRED = "EXPIRED"
+}
+
+enum platformEnum {
+    Facebook = "Facebook",
+    Twitter = "Twitter",
+    Instagram = "Instagram"
 }
 
 enum companyFields {
@@ -446,8 +467,6 @@ enum people_relationshipEnum {
     FRIEND_OF = "FRIEND_OF",
     FOLLOWS_TO = "FOLLOWS_TO",
     FOLLOWED_BY = "FOLLOWED_BY"
-
-
 }
 
 enum campaignInfluencePeopleAsEnum {
@@ -740,5 +759,8 @@ export {
     people_relationshipFields,
     people_relationshipEnum,
     campaignInfluencePeopleAsEnum,
-    socialMediaStatusEnum
+    socialMediaStatusEnum,
+    person_credential_fiendsFeedStatusEnum,
+    person_credential_statusEnum,
+    platformEnum
 };
