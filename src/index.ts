@@ -457,13 +457,13 @@ enum companyFields {
 enum people_relationshipFields {
     _id = "_id",
     personId = "personId",
-    person_credentialId = "person_credentialId",
+    platformObjectIdentity = "platformObjectIdentity",
     platform = "platform",
     relationship = "relationship",
     creationDt = "creationDt"
 }
 
-enum people_relationshipEnum {
+enum people_relationshipEnum  {
     FRIEND_OF = "FRIEND_OF",
     FOLLOWS_TO = "FOLLOWS_TO",
     FOLLOWED_BY = "FOLLOWED_BY"
@@ -757,10 +757,10 @@ export {
     appTypeEnum,
     person_credentialFields,
     people_relationshipFields,
-    people_relationshipEnum,
     campaignInfluencePeopleAsEnum,
     socialMediaStatusEnum,
     person_credential_fiendsFeedStatusEnum,
     person_credential_statusEnum,
-    platformEnum
+    platformEnum,
+    people_relationshipEnum 
 };
