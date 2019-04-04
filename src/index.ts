@@ -463,7 +463,7 @@ enum people_relationshipFields {
     creationDt = "creationDt"
 }
 
-enum people_relationship_relationshipEnum {
+enum people_relationshipEnum  {
     FRIEND_OF = "FRIEND_OF",
     FOLLOWS_TO = "FOLLOWS_TO",
     FOLLOWED_BY = "FOLLOWED_BY"
@@ -762,5 +762,5 @@ export {
     person_credential_fiendsFeedStatusEnum,
     person_credential_statusEnum,
     platformEnum,
-    people_relationship_relationshipEnum
+    people_relationshipEnum 
 };
