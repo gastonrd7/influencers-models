@@ -706,7 +706,36 @@ enum personFields {
     campaignsUpdatedDt = "campaignsUpdatedDt",
     sponsorshipCampaigns = "sponsorshipCampaigns",
     spotCampaigns = "spotCampaigns",
-    advertisingCampaigns = "advertisingCampaigns"
+    advertisingCampaigns = "advertisingCampaigns",
+    sponsorshipCampaignsCount = "sponsorshipCampaignsCount",
+    advertisingCampaignsCount = "advertisingCampaignsCount",
+    spotCampaignsCount = "spotCampaignsCount",
+    referralsCount = "referralsCount",
+    referralClanCount = "referralClanCount",
+    referralTitheTotal = "referralTitheTotal",
+    sponsorshipAdsCount = "sponsorshipAdsCount",
+    sponsorshipEarnedMoneyTotal = "sponsorshipEarnedMoneyTotal",
+    spotAdsCount = "spotAdsCount",
+    spotEarnedMoneyTotal = "spotEarnedMoneyTotal",
+    advertisingAdsCount = "advertisingAdsCount",
+    advertisingEarnedMoneyTotal = "advertisingEarnedMoneyTotal",
+    influencerCategory = "influencerCategory"
+}
+
+enum influencerCategoryEnum {
+    KING = "KING",
+    QUEEN = "QUEEN",
+    PRINCE = "PRINCE",
+    PRINCESS = "PRINCESS",
+    DUKE = "DUKE",
+    DUCHESS = "DUCHESS",
+    VILLAGER = "VILLAGER"
+}
+
+enum referralFields {
+    _id = "_id",
+    referentPersonId = "referentPersonId",
+    referralPersonId = "referralPersonId",
 }
 
 enum appTypeEnum {
@@ -762,5 +791,7 @@ export {
     person_credential_fiendsFeedStatusEnum,
     person_credential_statusEnum,
     platformEnum,
-    people_relationshipEnum 
+    people_relationshipEnum,
+    influencerCategoryEnum,
+    referralFields
 };
