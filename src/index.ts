@@ -24,7 +24,8 @@ enum Model {
     person_company = "person_company",
     role = "role",
     person_credential = "person_credential",
-    people_relationship = "people_relationship"
+    people_relationship = "people_relationship",
+    referral = "referral"
 }
 
 enum appTypes {
@@ -184,6 +185,7 @@ enum advertisingEffectivenessFields {
 enum advertisementFields {
     _id = "_id",
     campaignId = "campaignId",
+    campaignType = "campaignType",
     companyId = "companyId",
     personId = "personId",
     personGenre = "personGenre",
@@ -265,6 +267,15 @@ enum advertisementFields {
     instagramPrintCount = "instagramPrintCount",
     instagramCommentCount = "instagramCommentCount",
     
+}
+
+enum advertisementStatusEnum {
+    NotSponsored = "NotSponsored",
+    WaitingForPlatformAudit = "WaitingForPlatformAudit",
+    WaitingForCustomerAudit = "WaitingForCustomerAudit",
+    RejectedByPlatform = "RejectedByPlatform",
+    RejectedByCustomer = "RejectedByCustomer",
+    Aproved = "Aproved"
 }
 
 enum postFields {
@@ -732,10 +743,27 @@ enum influencerCategoryEnum {
     VILLAGER = "VILLAGER"
 }
 
+enum nationalityEnum {
+    Argentina = "Argentina",
+    EstadosUnidos = "EstadosUnidos",
+    Venezuela = "Venezuela",
+    Colombia = "Colombia"
+}
+
+enum religionEnum {
+    Cristiana = "Cristiana",
+    Judia = "Judia",
+    Indu = "Indu",
+    Protestante = "Protestante"
+
+}
+
 enum referralFields {
     _id = "_id",
     referentPersonId = "referentPersonId",
     referralPersonId = "referralPersonId",
+    titheTotal = "titheTotal",
+    creationDt = "creationDt"
 }
 
 enum appTypeEnum {
@@ -793,5 +821,8 @@ export {
     platformEnum,
     people_relationshipEnum,
     influencerCategoryEnum,
-    referralFields
+    referralFields,
+    nationalityEnum,
+    religionEnum,
+    advertisementStatusEnum
 };
