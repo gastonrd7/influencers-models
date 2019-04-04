@@ -24,7 +24,8 @@ enum Model {
     person_company = "person_company",
     role = "role",
     person_credential = "person_credential",
-    people_relationship = "people_relationship"
+    people_relationship = "people_relationship",
+    referral = "referral"
 }
 
 enum appTypes {
@@ -184,6 +185,7 @@ enum advertisingEffectivenessFields {
 enum advertisementFields {
     _id = "_id",
     campaignId = "campaignId",
+    campaignType = "campaignType",
     companyId = "companyId",
     personId = "personId",
     personGenre = "personGenre",
@@ -265,6 +267,15 @@ enum advertisementFields {
     instagramPrintCount = "instagramPrintCount",
     instagramCommentCount = "instagramCommentCount",
     
+}
+
+enum advertisementStatusEnum {
+    NotSponsored = "NotSponsored",
+    WaitingForPlatformAudit = "WaitingForPlatformAudit",
+    WaitingForCustomerAudit = "WaitingForCustomerAudit",
+    RejectedByPlatform = "RejectedByPlatform",
+    RejectedByCustomer = "RejectedByCustomer",
+    Aproved = "Aproved"
 }
 
 enum postFields {
@@ -706,7 +717,53 @@ enum personFields {
     campaignsUpdatedDt = "campaignsUpdatedDt",
     sponsorshipCampaigns = "sponsorshipCampaigns",
     spotCampaigns = "spotCampaigns",
-    advertisingCampaigns = "advertisingCampaigns"
+    advertisingCampaigns = "advertisingCampaigns",
+    sponsorshipCampaignsCount = "sponsorshipCampaignsCount",
+    advertisingCampaignsCount = "advertisingCampaignsCount",
+    spotCampaignsCount = "spotCampaignsCount",
+    referralsCount = "referralsCount",
+    referralClanCount = "referralClanCount",
+    referralTitheTotal = "referralTitheTotal",
+    sponsorshipAdsCount = "sponsorshipAdsCount",
+    sponsorshipEarnedMoneyTotal = "sponsorshipEarnedMoneyTotal",
+    spotAdsCount = "spotAdsCount",
+    spotEarnedMoneyTotal = "spotEarnedMoneyTotal",
+    advertisingAdsCount = "advertisingAdsCount",
+    advertisingEarnedMoneyTotal = "advertisingEarnedMoneyTotal",
+    influencerCategory = "influencerCategory"
+}
+
+enum influencerCategoryEnum {
+    KING = "KING",
+    QUEEN = "QUEEN",
+    PRINCE = "PRINCE",
+    PRINCESS = "PRINCESS",
+    DUKE = "DUKE",
+    DUCHESS = "DUCHESS",
+    VILLAGER = "VILLAGER"
+}
+
+enum nationalityEnum {
+    Argentina = "Argentina",
+    EstadosUnidos = "EstadosUnidos",
+    Venezuela = "Venezuela",
+    Colombia = "Colombia"
+}
+
+enum religionEnum {
+    Cristiana = "Cristiana",
+    Judia = "Judia",
+    Indu = "Indu",
+    Protestante = "Protestante"
+
+}
+
+enum referralFields {
+    _id = "_id",
+    referentPersonId = "referentPersonId",
+    referralPersonId = "referralPersonId",
+    titheTotal = "titheTotal",
+    creationDt = "creationDt"
 }
 
 enum appTypeEnum {
@@ -762,5 +819,10 @@ export {
     person_credential_fiendsFeedStatusEnum,
     person_credential_statusEnum,
     platformEnum,
-    people_relationshipEnum 
+    people_relationshipEnum,
+    influencerCategoryEnum,
+    referralFields,
+    nationalityEnum,
+    religionEnum,
+    advertisementStatusEnum
 };
