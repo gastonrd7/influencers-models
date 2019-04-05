@@ -447,10 +447,12 @@ enum platformEnum {
 }
 
 enum companyFields {
-    companyId = "companyId",
+    _id = "_id",
     name = "name",
     logo = "logo",
+    active = "active",
     campaignsOnGoingCount = "campaignsOnGoingCount",
+    campaignsWaitingForApprovalCount = "campaignsWaitingForApprovalCount",
     campaignsPendingForApprovalCount = "campaignsPendingForApprovalCount",
     campaignsFinishedCount = "campaignsFinishedCount",
     campaignsWaitingForPaymentCount = "campaignsWaitingForPaymentCount",
@@ -461,7 +463,9 @@ enum companyFields {
     investment = "investment",
     budgetAvailable = "budgetAvailable",
     budgetFreezed = "budgetFreezed",
-    budgetSpent = "budgetSpent"
+    budgetSpent = "budgetSpent",
+    platformStars = "platformStars",
+    customerStars = "customerStars"
     
 }
 
@@ -506,6 +510,9 @@ enum campaignFields {
     religionScope = "religionScope",
     sexCriterias = "sexCriterias",
     sexScope = "sexScope",
+    adsPerIR = "adsPerIR",
+    resources = "resources",
+    nextStatuses = "nextStatuses",
     customerStarCriterias = "customerStarCriterias",
     platformStarCriterias = "platformStarCriterias",
     customerStarScope = "customerStarScope",
@@ -627,7 +634,12 @@ enum campaignFields {
     instagramInfluencedsCardinal = "instagramInfluencedsCardinal",
     instagramInfluencersCardinal = "instagramInfluencersCardinal",
     twitterInfluencedsCardinal = "twitterInfluencedsCardinal",
-    twitterInfluencersCardinal = "twitterInfluencersCardinal"
+    twitterInfluencersCardinal = "twitterInfluencersCardinal",
+    companyName = "companyName",
+    companyLogo = "companyLogo",
+    companyPlatformStars = "companyPlatformStars",
+    companyCustomerStars = "companyCustomerStars",
+    
 }
 
 enum campaignSpecificTargetScopeFields {
@@ -730,7 +742,10 @@ enum personFields {
     spotEarnedMoneyTotal = "spotEarnedMoneyTotal",
     advertisingAdsCount = "advertisingAdsCount",
     advertisingEarnedMoneyTotal = "advertisingEarnedMoneyTotal",
-    influencerCategory = "influencerCategory"
+    influencerCategory = "influencerCategory",
+    sponsorshipCampaignCategories = "sponsorshipCampaignCategories",
+    spotCampaignCategories = "spotCampaignCategories",
+    advertisingCampaignCategories = "advertisingCampaignCategories"
 }
 
 enum influencerCategoryEnum {
