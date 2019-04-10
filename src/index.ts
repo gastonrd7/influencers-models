@@ -489,15 +489,35 @@ enum campaignInfluencePeopleAsEnum {
     ID = "ID"
 }
 
+enum personAvailableCampaignFields {
+    _id = "_id",
+    companyId = "companyId",
+    companyName = "companyName",
+    companyLogo = "companyLogo",
+    companyPlatformStars = "companyPlatformStars",
+    companyCustomerStars = "companyCustomerStars",
+    name = "name",
+    brief = "brief",
+    resources = "resources",
+    paymentType = "paymentType",
+    specificTarget = "specificTarget",
+}
+
+
 enum campaignFields {
     _id = "_id",
     companyId = "companyId",
+    companyName = "companyName",
+    companyLogo = "companyLogo",
+    companyPlatformStars = "companyPlatformStars",
+    companyCustomerStars = "companyCustomerStars",
     name = "name",
     brief = "brief",
     specificTarget = "specificTarget",
     influencePeopleAs = "influencePeopleAs",
     influencerPerEachOfThem = "influencerPerEachOfThem",
     followers = "followers",
+    resources = "resources",
     type = "type",
     paymentType = "paymentType",
     productPaymentDescription = "productPaymentDescription",
@@ -839,5 +859,6 @@ export {
     referralFields,
     nationalityEnum,
     religionEnum,
-    advertisementStatusEnum
+    advertisementStatusEnum,
+    personAvailableCampaignFields
 };
