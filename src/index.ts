@@ -501,6 +501,7 @@ enum personAvailableCampaignFields {
     resources = "resources",
     paymentType = "paymentType",
     specificTarget = "specificTarget",
+    categoryCriterias = "categoryCriterias"
 }
 
 
@@ -517,7 +518,6 @@ enum campaignFields {
     influencePeopleAs = "influencePeopleAs",
     influencerPerEachOfThem = "influencerPerEachOfThem",
     followers = "followers",
-    resources = "resources",
     type = "type",
     paymentType = "paymentType",
     productPaymentDescription = "productPaymentDescription",
@@ -654,12 +654,7 @@ enum campaignFields {
     instagramInfluencedsCardinal = "instagramInfluencedsCardinal",
     instagramInfluencersCardinal = "instagramInfluencersCardinal",
     twitterInfluencedsCardinal = "twitterInfluencedsCardinal",
-    twitterInfluencersCardinal = "twitterInfluencersCardinal",
-    companyName = "companyName",
-    companyLogo = "companyLogo",
-    companyPlatformStars = "companyPlatformStars",
-    companyCustomerStars = "companyCustomerStars",
-    
+    twitterInfluencersCardinal = "twitterInfluencersCardinal"
 }
 
 enum campaignSpecificTargetScopeFields {
