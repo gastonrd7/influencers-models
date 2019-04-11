@@ -447,10 +447,12 @@ enum platformEnum {
 }
 
 enum companyFields {
-    companyId = "companyId",
+    _id = "_id",
     name = "name",
     logo = "logo",
+    active = "active",
     campaignsOnGoingCount = "campaignsOnGoingCount",
+    campaignsWaitingForApprovalCount = "campaignsWaitingForApprovalCount",
     campaignsPendingForApprovalCount = "campaignsPendingForApprovalCount",
     campaignsFinishedCount = "campaignsFinishedCount",
     campaignsWaitingForPaymentCount = "campaignsWaitingForPaymentCount",
@@ -461,7 +463,9 @@ enum companyFields {
     investment = "investment",
     budgetAvailable = "budgetAvailable",
     budgetFreezed = "budgetFreezed",
-    budgetSpent = "budgetSpent"
+    budgetSpent = "budgetSpent",
+    platformStars = "platformStars",
+    customerStars = "customerStars"
     
 }
 
@@ -485,9 +489,29 @@ enum campaignInfluencePeopleAsEnum {
     ID = "ID"
 }
 
+enum personAvailableCampaignFields {
+    _id = "_id",
+    companyId = "companyId",
+    companyName = "companyName",
+    companyLogo = "companyLogo",
+    companyPlatformStars = "companyPlatformStars",
+    companyCustomerStars = "companyCustomerStars",
+    name = "name",
+    brief = "brief",
+    resources = "resources",
+    paymentType = "paymentType",
+    specificTarget = "specificTarget",
+    categoryCriterias = "categoryCriterias"
+}
+
+
 enum campaignFields {
     _id = "_id",
     companyId = "companyId",
+    companyName = "companyName",
+    companyLogo = "companyLogo",
+    companyPlatformStars = "companyPlatformStars",
+    companyCustomerStars = "companyCustomerStars",
     name = "name",
     brief = "brief",
     specificTarget = "specificTarget",
@@ -506,6 +530,9 @@ enum campaignFields {
     religionScope = "religionScope",
     sexCriterias = "sexCriterias",
     sexScope = "sexScope",
+    adsPerIR = "adsPerIR",
+    resources = "resources",
+    nextStatuses = "nextStatuses",
     customerStarCriterias = "customerStarCriterias",
     platformStarCriterias = "platformStarCriterias",
     customerStarScope = "customerStarScope",
@@ -730,7 +757,10 @@ enum personFields {
     spotEarnedMoneyTotal = "spotEarnedMoneyTotal",
     advertisingAdsCount = "advertisingAdsCount",
     advertisingEarnedMoneyTotal = "advertisingEarnedMoneyTotal",
-    influencerCategory = "influencerCategory"
+    influencerCategory = "influencerCategory",
+    sponsorshipCampaignCategories = "sponsorshipCampaignCategories",
+    spotCampaignCategories = "spotCampaignCategories",
+    advertisingCampaignCategories = "advertisingCampaignCategories"
 }
 
 enum influencerCategoryEnum {
@@ -824,5 +854,6 @@ export {
     referralFields,
     nationalityEnum,
     religionEnum,
-    advertisementStatusEnum
+    advertisementStatusEnum,
+    personAvailableCampaignFields
 };
