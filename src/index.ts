@@ -597,6 +597,8 @@ enum campaignFields {
     engagementFemaleInfluencer = "engagementFemaleInfluencer",
     engagementMaleInfluenced = "engagementMaleInfluenced",
     engagementFemaleInfluenced = "engagementFemaleInfluenced",
+    engagementAnonymousInfluenced = "engagementAnonymousInfluenced",
+    investmentRequired = "investmentRequired",  
     influencersTotal = "influencersTotal",
     influencersTotalHistoric = "influencersTotalHistoric",
     engagementRealHistoric = "engagementRealHistoric",
