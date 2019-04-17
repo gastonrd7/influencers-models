@@ -188,6 +188,7 @@ enum advertisementFields {
     campaignType = "campaignType",
     companyId = "companyId",
     personId = "personId",
+    address_geoPoint = "address_geoPoint",
     personGenre = "personGenre",
     active = "active",
     multimediaUri = "multimediaUri",
@@ -370,6 +371,7 @@ enum insightFields {
     campaignId = "campaignId",
     platformObjectIdentity = "platformObjectIdentity",
     companyId = "companyId",
+    address_geoPoint = "address_geoPoint",
     genre = "genre",
     genderId = "genderId",
     birthDateYear = "birthDateYear",
@@ -383,6 +385,11 @@ enum insightPlatformEnum {
     Facebook = "Facebook",
     Instagram = "Instagram",
     Twitter = "Twitter"
+}
+enum insightGenreEnum {
+    Male = "Male",
+    Female = "Female",
+    Unknown = "Unknown"
 }
 
 enum insightTypeEnum {
@@ -861,5 +868,6 @@ export {
     nationalityEnum,
     religionEnum,
     advertisementStatusEnum,
-    personAvailableCampaignFields
+    personAvailableCampaignFields,
+    insightGenreEnum
 };
