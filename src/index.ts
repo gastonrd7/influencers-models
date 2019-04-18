@@ -578,6 +578,7 @@ enum campaignFields {
     moneyPerEngagementReal = "moneyPerEngagementReal",
     engagementReal = "engagementReal",
     engagementExpected = "engagementExpected",
+    influencersExpected = "influencersExpected",
     engagementVelocityReal = "engagementVelocityReal",
     engagementVelocityExpected = "engagementVelocityExpected",
     forecastDays = "forecastDays",
