@@ -790,7 +790,7 @@ enum influencerCategoryEnum {
     PRINCESS = "PRINCESS",
     DUKE = "DUKE",
     DUCHESS = "DUCHESS",
-    VILLAGER = "VILLAGER"
+    PEASANT = "PEASANT"
 }
 
 enum nationalityEnum {
