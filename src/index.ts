@@ -185,8 +185,11 @@ enum advertisingEffectivenessFields {
 enum advertisementFields {
     _id = "_id",
     campaignId = "campaignId",
+    campaignName = "campaignName",
     campaignType = "campaignType",
     companyId = "companyId",
+    companyName = "companyName",
+    companyLogo = "companyLogo",
     personId = "personId",
     address_geoPoint = "address_geoPoint",
     personGenre = "personGenre",
@@ -276,7 +279,7 @@ enum advertisementStatusEnum {
     WaitingForCustomerAudit = "WaitingForCustomerAudit",
     RejectedByPlatform = "RejectedByPlatform",
     RejectedByCustomer = "RejectedByCustomer",
-    Aproved = "Aproved"
+    Approved = "Approved"
 }
 
 enum postFields {
@@ -771,6 +774,7 @@ enum personFields {
     referralsCount = "referralsCount",
     referralClanCount = "referralClanCount",
     referralTitheTotal = "referralTitheTotal",
+    nonSponsoredAdsCount = "nonSponsoredAdsCount",
     sponsorshipAdsCount = "sponsorshipAdsCount",
     sponsorshipEarnedMoneyTotal = "sponsorshipEarnedMoneyTotal",
     spotAdsCount = "spotAdsCount",
