@@ -485,6 +485,7 @@ enum people_relationshipFields {
     platformObjectIdentity = "platformObjectIdentity",
     platform = "platform",
     relationship = "relationship",
+    invitationStatus = "invitationStatus",
     creationDt = "creationDt"
 }
 
@@ -771,6 +772,7 @@ enum personFields {
     sponsorshipCampaignsCount = "sponsorshipCampaignsCount",
     advertisingCampaignsCount = "advertisingCampaignsCount",
     spotCampaignsCount = "spotCampaignsCount",
+    referralsUpdateDt = "referralsUpdateDt",
     referralsCount = "referralsCount",
     referralClanCount = "referralClanCount",
     referralTitheTotal = "referralTitheTotal",
@@ -784,7 +786,21 @@ enum personFields {
     influencerCategory = "influencerCategory",
     sponsorshipCampaignCategories = "sponsorshipCampaignCategories",
     spotCampaignCategories = "spotCampaignCategories",
-    advertisingCampaignCategories = "advertisingCampaignCategories"
+    advertisingCampaignCategories = "advertisingCampaignCategories",
+    potentialReferralsUpdatedDt = "potentialReferralsUpdatedDt",
+    potentialReferrals = "potentialReferrals"
+}
+
+enum personPotentialReferralsFields {
+    status = "status",
+    potentialReferral = "potentialReferral"
+}
+
+enum People_relationshipInvitationStatusEnum {
+    DIDNOTSEND = "DIDNOTSEND",
+    SENT = "SENT",
+    ACCEPTED = "ACCEPTED",
+    REJECTED = "REJECTED"
 }
 
 enum influencerCategoryEnum {
@@ -817,7 +833,19 @@ enum referralFields {
     referentPersonId = "referentPersonId",
     referralPersonId = "referralPersonId",
     titheTotal = "titheTotal",
-    creationDt = "creationDt"
+    creationDt = "creationDt",
+    referralFirstName = "referralFirstName",
+    referralLastName = "referralLastName",
+    referralThumbnail = "referralThumbnail",
+    referralCustomerStars = "referralCustomerStars",
+    referralPlatformStars = "referralPlatformStars",
+    referralReferralsCount = "referralReferralsCount",
+    referralReferralClanCount = "referralReferralClanCount",
+    referralInfluencerCategory = "referralInfluencerCategory",
+    referralNonSponsoredAdsCount = "referralNonSponsoredAdsCount",
+    referralSponsorshipAdsCount = "referralSponsorshipAdsCount",
+    referralAdvertisingAdsCount = "referralAdvertisingAdsCount",
+    referralSpotAdsCount = "referralSpotAdsCount"
 }
 
 enum appTypeEnum {
@@ -880,5 +908,7 @@ export {
     religionEnum,
     advertisementStatusEnum,
     personAvailableCampaignFields,
-    insightGenreEnum
+    insightGenreEnum,
+    personPotentialReferralsFields,
+    People_relationshipInvitationStatusEnum
 };
