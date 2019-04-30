@@ -730,6 +730,7 @@ enum personFields {
     _id = "_id",
     username = "username",
     password = "password",
+    referentCode = "referentCode",
     roleIds = "roleIds",
     firstName = "firstName",
     lastName = "lastName",
