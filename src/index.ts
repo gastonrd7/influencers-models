@@ -270,7 +270,7 @@ enum advertisementFields {
     instagramHashtagCount = "instagramHashtagCount",
     instagramPrintCount = "instagramPrintCount",
     instagramCommentCount = "instagramCommentCount",
-    
+    resources = "resources"
 }
 
 enum advertisementStatusEnum {
