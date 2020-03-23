@@ -25,7 +25,8 @@ enum Model {
     role = "role",
     person_credential = "person_credential",
     people_relationship = "people_relationship",
-    referral = "referral"
+    referral = "referral",
+    trace = "trace"
 }
 
 enum appTypes {
@@ -866,6 +867,23 @@ enum appTypeEnum {
     Others = "Others"
 }
 
+enum traceFields {
+    _id = "_id",
+    traceId = "traceId",
+    traceUseCase = "traceUseCase",
+    traceCauseOnOrigin = "traceCauseOnOrigin",
+    traceOriginModel = "traceOriginModel",
+    traceOriginModelId = "traceOriginModelId",
+    traceOriginModelField = "traceOriginModelField",
+    traceConsecuenceOnDestination = "traceConsecuenceOnDestination",
+    traceHandler = "traceHandler",
+    traceHandlerExecutionId = "traceHandlerExecutionId",
+    traceDestinationModel = "traceDestinationModel",
+    traceDestinationModelId = "traceDestinationModelId",
+    traceDestinationModelField = "traceDestinationModelField",
+    traceCreatedAt = "traceCreatedAt",
+}
+
 export {
     Model,
     appTypes,
@@ -921,5 +939,6 @@ export {
     personAvailableCampaignFields,
     insightGenreEnum,
     personPotentialReferralsFields,
-    People_relationshipInvitationStatusEnum
+    People_relationshipInvitationStatusEnum,
+    traceFields
 };
