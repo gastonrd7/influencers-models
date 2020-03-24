@@ -26,7 +26,8 @@ enum Model {
     person_credential = "person_credential",
     people_relationship = "people_relationship",
     referral = "referral",
-    trace = "trace"
+    trace = "trace",
+    webSession = 'webSession'
 }
 
 enum appTypes {
@@ -884,6 +885,22 @@ enum traceFields {
     traceCreatedAt = "traceCreatedAt",
 }
 
+enum webSessionFields {
+    _id = "_id",
+    browser = "browser",
+    domain = "domain",
+    personId = "personId",
+    cookies = "cookies",
+    createdAt = "createdAt"
+}
+
+enum webSessionDomainEnum {
+    Chrome = "Chrome",
+    Firefox = "Firefox",
+    Edge = "Edge",
+    Safari = "Safari"
+}
+
 export {
     Model,
     appTypes,
@@ -940,5 +957,7 @@ export {
     insightGenreEnum,
     personPotentialReferralsFields,
     People_relationshipInvitationStatusEnum,
-    traceFields
+    traceFields,
+    webSessionFields,
+    webSessionDomainEnum
 };
