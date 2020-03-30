@@ -901,6 +901,12 @@ enum webSessionDomainEnum {
     Safari = "Safari"
 }
 
+enum languagesEnum {
+    English = "English",
+    Spanish = "Spanish"
+}
+
+
 export {
     Model,
     appTypes,
@@ -959,5 +965,6 @@ export {
     People_relationshipInvitationStatusEnum,
     traceFields,
     webSessionFields,
-    webSessionDomainEnum
+    webSessionDomainEnum,
+    languagesEnum
 };
