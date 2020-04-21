@@ -27,7 +27,8 @@ enum Model {
     people_relationship = "people_relationship",
     referral = "referral",
     trace = "trace",
-    webSession = 'webSession'
+    webSession = "webSession",
+    socialMediaImplementation = "socialMediaImplementation"
 }
 
 enum appTypes {
@@ -906,6 +907,16 @@ enum languagesEnum {
     Spanish = "Spanish"
 }
 
+enum socialMediaImplementationFields {
+    _id = "_id",
+    platform = "platform",
+    method = "method",
+    library = "library",
+    failuresCount = "failuresCount",
+    version = "version",
+    createdAt = "createdAt"
+}
+
 
 export {
     Model,
@@ -966,5 +977,6 @@ export {
     traceFields,
     webSessionFields,
     webSessionDomainEnum,
-    languagesEnum
+    languagesEnum,
+    socialMediaImplementationFields
 };
