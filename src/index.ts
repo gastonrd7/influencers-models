@@ -3,6 +3,7 @@ enum Model {
     campaign = "campaign",
     advertisement = "advertisement",
     post = "post",
+    postExternal = "postExternal",
     insight = "insight",
     person = "person",
     historic = "historic",
@@ -293,9 +294,16 @@ enum advertisementStatusEnum {
     Approved = "Approved"
 }
 
+enum postExternalFields {
+    advertisementId = "advertisementId",
+    platform = "platform",
+    platformObjectIdentity = "platformObjectIdentity"
+}
+
 enum postFields {
     _id = "_id",
     advertisementId = "advertisementId",
+    personId = "personId",
     campaignId = "campaignId",
     companyId = "companyId",
     platform = "platform",
@@ -350,6 +358,7 @@ enum postFields {
 
 enum socialMediaStatusEnum {
     None = "None", 
+    PostRequired = "PostRequired",
     Posting = "Posting", 
     Posted = "Posted", 
     Failed = "Failed", 
@@ -359,13 +368,8 @@ enum socialMediaStatusEnum {
 
 enum postFeedStatusEnum {
     Idle = "Idle",
-    Fetching = "Fetching"
-}
-
-enum postPlatformEnum {
-    Facebook = "Facebook",
-    Instagram = "Instagram",
-    Twitter = "Twitter"
+    Fetching = "Fetching",
+    Failed = "Failed"
 }
 
 enum historicFields {
@@ -395,11 +399,7 @@ enum insightFields {
     creationDt = "creationDt",
 }
 
-enum insightPlatformEnum {
-    Facebook = "Facebook",
-    Instagram = "Instagram",
-    Twitter = "Twitter"
-}
+
 enum insightGenreEnum {
     Male = "Male",
     Female = "Female",
@@ -450,7 +450,8 @@ enum person_credentialFields {
 
 enum person_credential_fiendsFeedStatusEnum {
     Idle = "Idle",
-    Fetching = "Fetching"
+    Fetching = "Fetching",
+    Failed = "Failed"
 }
 
 enum person_credential_statusEnum {
@@ -911,7 +912,6 @@ enum socialMediaImplementationFields {
     _id = "_id",
     platform = "platform",
     method = "method",
-    library = "library",
     failuresCount = "failuresCount",
     version = "version",
     createdAt = "createdAt"
@@ -938,12 +938,11 @@ export {
     spotEffectivenessFields,
     advertisingEffectivenessFields,
     advertisementFields,
+    postExternalFields,
     postFields,
     postFeedStatusEnum,
-    postPlatformEnum,
     historicFields,
     insightFields,
-    insightPlatformEnum,
     insightTypeEnum,
     resourceTypeEnum,
     companyFields,
