@@ -913,7 +913,7 @@ enum socialMediaImplementationFields {
     platform = "platform",
     method = "method",
     failuresCount = "failuresCount",
-    version = "version",
+    methodVersion = "methodVersion",
     createdAt = "createdAt"
 }
 
