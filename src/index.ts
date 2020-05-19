@@ -436,6 +436,7 @@ enum person_credentialFields {
     friendsFeedStatus = "friendsFeedStatus",
     platformObjectIdentity = "platformObjectIdentity",
     status = "status",
+    displayName = "displayName",
     access_token = "access_token",
     expires = "expires",
     userName = "userName",
