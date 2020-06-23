@@ -415,6 +415,12 @@ enum insightTypeEnum {
     Print = "Print",
     Shared = "Shared",
     Comment = "Comment",
+    Amazesme = 'Amazesme',
+    Iloveit = 'Iloveit',
+    Ienjoy = 'Ienjoy',
+    Angersme = 'Angersme',
+    Icare = 'Icare',
+    Saddensme = 'Saddensme'
 }
 
 enum resourceTypeEnum {
