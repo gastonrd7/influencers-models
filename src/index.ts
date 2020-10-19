@@ -29,7 +29,9 @@ enum Model {
     referral = "referral",
     trace = "trace",
     webSession = "webSession",
-    socialMediaImplementation = "socialMediaImplementation"
+    socialMediaImplementation = "socialMediaImplementation",
+    fullStackWorkflowState = "fullStackWorkflowState",
+    termsAndConditions = "termsAndConditions"
 }
 
 enum appTypes {
@@ -452,6 +454,7 @@ enum person_credentialFields {
     firstName = "firstName",
     lastName = "lastName",
     email = "email",
+    verTermsAndConditions = "verTermsAndConditions",
     creationDt = "creationDt"
 }
 
@@ -466,7 +469,10 @@ enum person_credential_statusEnum {
     LINKING = "LINKING",
     LINKED = "LINKED",
     FAILED = "FAILED",
-    EXPIRED = "EXPIRED"
+    EXPIRED = "EXPIRED",
+    //TENTACLES
+    MANUAL_ACTION_REQUIRED = "MANUAL_ACTION_REQUIRED",
+    TERMS_SIGNATURE_REQUIRED = "TERMS_SIGNATURE_REQUIRED"
 }
 
 enum platformEnum {
@@ -924,6 +930,42 @@ enum socialMediaImplementationFields {
     createdAt = "createdAt"
 }
 
+enum fullStackWorkflowStateFields{
+    _id = "_id",
+    personUserName = "personUserName",
+    key = "key",  
+    value = "value",
+    lastUpdateDt = "lastUpdateDt"
+}
+
+enum socialMediaAuthenticationWorkFlowStateEnum{
+    EMAIL_SAME_CODE_NEEDED = "EMAIL_SAME_CODE_NEEDED",
+    EMAIL_NEW_CODE_NEEDED = "EMAIL_NEW_CODE_NEEDED",
+    SMS_NEW_CODE_NEEDED = "SMS_NEW_CODE_NEEDED",
+    SMS_SAME_CODE_NEEDED = "SMS_SAME_CODE_NEEDED",
+    INVALID_CREDENTIALS = "INVALID_CREDENTIALS",
+    CANCELED = "CANCELED",
+    LINK_STATE = "LINK_STATE",
+    LINK_USER_INPUT = "LINK_USER_INPUT",
+    PROVIDED = "PROVIDED"
+}
+
+enum termsAndConditionsFields{
+    _id = "_id",
+    platform = "platform",
+    version = "version",
+    status = "status",
+    lastUpdateDt = "lastUpdateDt"
+}
+
+enum termsAndConditionsStatusEnum{
+    developing = "developing",
+    inReview = "inReview",
+    pendingApproval = "pendingApproval",
+    approved = "approved",
+    dismissed = "dismissed",
+    expired = "expired"    
+}
 
 export {
     Model,
@@ -984,5 +1026,9 @@ export {
     webSessionFields,
     webSessionDomainEnum,
     languagesEnum,
-    socialMediaImplementationFields
+    socialMediaImplementationFields,
+    socialMediaAuthenticationWorkFlowStateEnum,
+    fullStackWorkflowStateFields,
+    termsAndConditionsFields,
+    termsAndConditionsStatusEnum
 };
