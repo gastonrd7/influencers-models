@@ -30,7 +30,7 @@ enum Model {
     trace = "trace",
     webSession = "webSession",
     socialMediaImplementation = "socialMediaImplementation",
-    fullStackWorkflowState = "fullStackWorkflowState",
+    fullStackWorkFlowState = "fullStackWorkFlowState",
     termsAndConditions = "termsAndConditions"
 }
 
@@ -474,6 +474,16 @@ enum person_credential_statusEnum {
     MANUAL_ACTION_REQUIRED = "MANUAL_ACTION_REQUIRED",
     TERMS_SIGNATURE_REQUIRED = "TERMS_SIGNATURE_REQUIRED"
 }
+
+enum person_credential_statusEnumDescription  {
+    NOT_LINKED = "Not linked yet!",
+    LINKING = "Linking...",
+    LINKED = "Linked",
+    FAILED = "Process has failed",
+    EXPIRED = "Expired",
+    MANUAL_ACTION_REQUIRED = "Manual action is required",
+    TERMS_SIGNATURE_REQUIRED = "Terms signature is required"    
+};
 
 enum platformEnum {
     Facebook = "Facebook",
@@ -930,7 +940,7 @@ enum socialMediaImplementationFields {
     createdAt = "createdAt"
 }
 
-enum fullStackWorkflowStateFields{
+enum fullStackWorkFlowStateFields{
     _id = "_id",
     personUserName = "personUserName",
     key = "key",  
@@ -947,7 +957,8 @@ enum socialMediaAuthenticationWorkFlowStateEnum{
     CANCELED = "CANCELED",
     LINK_STATE = "LINK_STATE",
     LINK_USER_INPUT = "LINK_USER_INPUT",
-    PROVIDED = "PROVIDED"
+    PROVIDED = "PROVIDED",
+    NONE = "NONE"
 }
 
 enum termsAndConditionsFields{
@@ -1011,6 +1022,7 @@ export {
     socialMediaStatusEnum,
     person_credential_fiendsFeedStatusEnum,
     person_credential_statusEnum,
+    person_credential_statusEnumDescription,
     platformEnum,
     people_relationshipEnum,
     influencerCategoryEnum,
@@ -1028,7 +1040,7 @@ export {
     languagesEnum,
     socialMediaImplementationFields,
     socialMediaAuthenticationWorkFlowStateEnum,
-    fullStackWorkflowStateFields,
+    fullStackWorkFlowStateFields,
     termsAndConditionsFields,
     termsAndConditionsStatusEnum
 };
