@@ -766,6 +766,7 @@ enum personFields {
     username = "username",
     password = "password",
     referentCode = "referentCode",
+    signUpReferentPersonId = "signUpReferentPersonId",
     roleIds = "roleIds",
     firstName = "firstName",
     lastName = "lastName",
