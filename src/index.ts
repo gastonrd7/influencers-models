@@ -949,17 +949,28 @@ enum fullStackWorkFlowStateFields{
     lastUpdateDt = "lastUpdateDt"
 }
 
-enum socialMediaAuthenticationWorkFlowStateEnum{
+enum socialMediaAuthenticationValuesWorkFlowStateEnum{
     EMAIL_SAME_CODE_NEEDED = "EMAIL_SAME_CODE_NEEDED",
+    EMAIL_SAME_CODE_NEEDED_PROVIDED = "EMAIL_SAME_CODE_NEEDED_PROVIDED",
+    EMAIL_SAME_CODE_NEEDED_CANCELED = "EMAIL_SAME_CODE_NEEDED_CANCELED",
     EMAIL_NEW_CODE_NEEDED = "EMAIL_NEW_CODE_NEEDED",
+    EMAIL_NEW_CODE_NEEDED_PROVIDED = "EMAIL_NEW_CODE_NEEDED_PROVIDED",
+    EMAIL_NEW_CODE_NEEDED_CANCELED = "EMAIL_NEW_CODE_NEEDED_CANCELED",
     SMS_NEW_CODE_NEEDED = "SMS_NEW_CODE_NEEDED",
+    SMS_NEW_CODE_NEEDED_PROVIDED = "SMS_NEW_CODE_NEEDED_PROVIDED",
+    SMS_NEW_CODE_NEEDED_CANCELED = "SMS_NEW_CODE_NEEDED_CANCELED",
     SMS_SAME_CODE_NEEDED = "SMS_SAME_CODE_NEEDED",
+    SMS_SAME_CODE_NEEDED_PROVIDED = "SMS_SAME_CODE_NEEDED_PROVIDED",
+    SMS_SAME_CODE_NEEDED_CANCELED = "SMS_SAME_CODE_NEEDED_CANCELED",
     INVALID_CREDENTIALS = "INVALID_CREDENTIALS",
-    CANCELED = "CANCELED",
-    LINK_STATE = "LINK_STATE",
-    LINK_USER_INPUT = "LINK_USER_INPUT",
-    PROVIDED = "PROVIDED",
+    INVALID_CREDENTIALS_PROVIDED = "INVALID_CREDENTIALS_PROVIDED",
+    INVALID_CREDENTIALS_CANCELED = "INVALID_CREDENTIALS_CANCELED",
     NONE = "NONE"
+}
+
+enum socialMediaAuthenticationKeysWorkFlowStateEnum{
+    LINK_STATE = "LINK_STATE",
+    LINK_USER_INPUT = "LINK_USER_INPUT",    
 }
 
 enum termsAndConditionsFields{
@@ -1040,7 +1051,8 @@ export {
     webSessionDomainEnum,
     languagesEnum,
     socialMediaImplementationFields,
-    socialMediaAuthenticationWorkFlowStateEnum,
+    socialMediaAuthenticationValuesWorkFlowStateEnum,
+    socialMediaAuthenticationKeysWorkFlowStateEnum,
     fullStackWorkFlowStateFields,
     termsAndConditionsFields,
     termsAndConditionsStatusEnum
