@@ -1,3 +1,8 @@
+enum DomainsEnum {
+    ADME_CORE = "ADME_CORE",
+    ADME_MONEY = "ADME_MONEY"
+}
+
 enum Model {
     company = "company",
     campaign = "campaign",
@@ -991,6 +996,7 @@ enum termsAndConditionsStatusEnum{
 }
 
 export {
+    DomainsEnum,
     Model,
     appTypes,
     permission_roleFields,
