@@ -36,7 +36,103 @@ enum Model {
     webSession = "webSession",
     socialMediaImplementation = "socialMediaImplementation",
     fullStackWorkFlowState = "fullStackWorkFlowState",
-    termsAndConditions = "termsAndConditions"
+    termsAndConditions = "termsAndConditions",
+    payment = "payment",
+    transactionItem = "transactionItem",
+    transactionItemTransaction = "transactionItemTransaction",
+    transaction = "transaction"
+}
+
+enum transactionItemFields {
+    _id = "_id",
+    createdAt = "createdAt"
+}
+
+enum transactionItemTransactionFields {
+    _id = "_id",
+    createdAt = "createdAt"
+}
+
+enum transactionFields {
+    _id = "_id",
+    createdAt = "createdAt"
+}
+
+
+
+enum transactionItemTransaction {
+    _id = "_id",
+}
+
+enum paymentFields {
+    _id = "_id",
+    createdAt = "createdAt"
+}
+
+enum syncTradeTypeEnum {
+    PaymentToInfluencer = "PaymentToInfluencer",
+    PaymentToAdme = "PaymentToAdme",
+    PaymentToReferent = "PaymentToReferent",
+    PaymentFromReferred = "PaymentFromReferred",
+    DistributeToReferents = "DistributeToReferents",
+    CampaignPayed = "CampaignPayed",
+    TaxCollected = "TaxCollected",
+    TaxPayment = "TaxPayment",
+    WithdrawByShopping = "WithdrawByShopping"
+
+}
+
+enum syncFields {
+    syncDirection = "syncDirection",
+    syncFowardStatus = "syncFowardStatus",
+    syncForwardStatusDt = "syncForwardStatusDt",
+    syncParentDomain = "syncParentDomain",
+    syncParentModel = "syncParentModel",
+    syncParentEntityId = "syncParentEntityId",
+    originCampaignId = "originCampaignId",
+    originAdvertisementId = "originAdvertisementId",
+    originPostId = "originPostId",
+    originInsightId = "originInsightId",
+    tradeType = "tradeType",
+    amount = "amount"
+}
+
+enum syncFowardStatusEnum {
+    Pending = "Pending",
+    InProgress = "InProgress",
+    Failed = "Failed",
+    Done = "Done",
+    NotNeeded = "NotNeeded"
+}
+
+enum moneyDistributionStatusEnum {
+    WaitingForApproval = "WaitingForApproval",
+    Approved = "Approved",
+    Done = "Done",
+    Failed = "Failed"
+}
+
+enum syncDirectionEnum {
+    Up = "Up",
+    Injection = "Injection",
+    Ejection = "Ejection"
+}
+
+enum cronJobs {
+    SocialMedia_ReadInsights = "SocialMedia_ReadInsights",
+    SocialMedia_ReadRelationships = "SocialMedia_ReadRelationships",
+    Money_Ejection_From_Core_Advertisement_DistributeMoney = "Money_Ejection_From_Core_Advertisement_DistributeMoney",
+    Money_Ejection_From_Core_Insight_DistributeMoney = "Money_Ejection_From_Core_Insight_DistributeMoney",
+    Money_Ejection_From_Core_Payment_PayToInfluencer = "Money_Ejection_From_Core_Payment_PayToInfluencer",
+    Money_Ejection_From_Core_Payment_PayToAdme = "Money_Ejection_From_Core_Payment_PayToAdme",
+    Money_Ejection_From_Core_Payment_PayToReferent = "Money_Ejection_From_Core_Payment_PayToReferent",
+    Money_Ejection_From_Money_TransactionItem_PayTaxes = "Money_Ejection_From_Money_TransactionItem_PayTaxes",
+    Money_Injection_From_Core_Payment_CampaignPayed = "Money_Injection_From_Core_Payment_CampaignPayed",
+    Money_Injection_From_Money_TransactionItem_CampaignPayed = "Money_Injection_From_Money_TransactionItem_CampaignPayed",
+    Money_Injection_From_Money_TransactionItemTransaction_CampaignPayed = "Money_Injection_From_Money_TransactionItemTransaction_CampaignPayed",
+    Money_Injection_From_Money_TransactionItemTransaction_PayTaxes = "Money_Injection_From_Money_TransactionItemTransaction_PayTaxes",
+    Money_Injection_From_Money_TransactionItemTransaction_WithdrawByShopping = "Money_Injection_From_Money_TransactionItemTransaction_WithdrawByShopping",
+    Money_Up_From_Core_Payment_DistributeToReferents = "Money_Up_From_Core_Payment_DistributeToReferents"
 }
 
 enum appTypes {
@@ -289,7 +385,8 @@ enum advertisementFields {
     instagramHashtagCount = "instagramHashtagCount",
     instagramPrintCount = "instagramPrintCount",
     instagramCommentCount = "instagramCommentCount",
-    resources = "resources"
+    resources = "resources",
+    moneyDistributionStatus = "moneyDistributionStatus"
 }
 
 enum advertisementStatusEnum {
@@ -373,7 +470,7 @@ enum socialMediaStatusEnum {
 
 }
 
-enum postFeedStatusEnum {
+enum feedStatusEnum {
     Idle = "Idle",
     Fetching = "Fetching",
     Failed = "Failed"
@@ -403,6 +500,7 @@ enum insightFields {
     birthDateMonth = "birthDateMonth",
     birthDateDay = "birthDateDay",
     type = "type",
+    moneyDistributionStatus = "moneyDistributionStatus",
     creationDt = "creationDt",
 }
 
@@ -461,12 +559,6 @@ enum person_credentialFields {
     email = "email",
     verTermsAndConditions = "verTermsAndConditions",
     creationDt = "creationDt"
-}
-
-enum person_credential_fiendsFeedStatusEnum {
-    Idle = "Idle",
-    Fetching = "Fetching",
-    Failed = "Failed"
 }
 
 enum person_credential_statusEnum {
@@ -574,6 +666,7 @@ enum campaignFields {
     followers = "followers",
     type = "type",
     paymentType = "paymentType",
+    paymentStatus = "paymentStatus",
     productPaymentDescription = "productPaymentDescription",
     paymentPerEach = "paymentPerEach",
     regionCriterias = "regionCriterias",
@@ -719,6 +812,12 @@ enum campaignFields {
     instagramInfluencersCardinal = "instagramInfluencersCardinal",
     twitterInfluencedsCardinal = "twitterInfluencedsCardinal",
     twitterInfluencersCardinal = "twitterInfluencersCardinal"
+}
+
+enum campaignPaymentStatusEnum {
+    Done = "Done",
+    Pending = "Pending",
+    Failed = "Failed"
 }
 
 enum campaignSpecificTargetScopeFields {
@@ -1018,7 +1117,7 @@ export {
     advertisementFields,
     postExternalFields,
     postFields,
-    postFeedStatusEnum,
+    feedStatusEnum,
     historicFields,
     insightFields,
     insightTypeEnum,
@@ -1038,7 +1137,6 @@ export {
     people_relationshipFields,
     campaignInfluencePeopleAsEnum,
     socialMediaStatusEnum,
-    person_credential_fiendsFeedStatusEnum,
     person_credential_statusEnum,
     person_credential_statusEnumDescription,
     platformEnum,
@@ -1061,5 +1159,17 @@ export {
     socialMediaAuthenticationKeysWorkFlowStateEnum,
     fullStackWorkFlowStateFields,
     termsAndConditionsFields,
-    termsAndConditionsStatusEnum
+    termsAndConditionsStatusEnum,
+    syncFields,
+    syncFowardStatusEnum,
+    syncDirectionEnum,
+    cronJobs,
+    paymentFields,
+    syncTradeTypeEnum,
+    transactionItemFields,
+    transactionItemTransaction,
+    moneyDistributionStatusEnum,
+    campaignPaymentStatusEnum,
+    transactionItemTransactionFields,
+    transactionFields
 };
