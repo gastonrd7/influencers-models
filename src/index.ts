@@ -35,7 +35,7 @@ enum Model {
     trace = "trace",
     webSession = "webSession",
     socialMediaImplementation = "socialMediaImplementation",
-    fullStackWorkFlowState = "fullStackWorkFlowState",
+    fullStackWorkFlowStates = "fullStackWorkFlowStates",
     termsAndConditions = "termsAndConditions"
 }
 
@@ -951,10 +951,13 @@ enum fullStackWorkFlowStateFields{
     personUserName = "personUserName",
     key = "key",  
     value = "value",
+    payload = "payload",
     lastUpdateDt = "lastUpdateDt"
 }
 
 enum socialMediaAuthenticationValuesWorkFlowStateEnum{
+    STARTED = "STARTED",
+    NONE = "NONE",
     EMAIL_SAME_CODE_NEEDED = "EMAIL_SAME_CODE_NEEDED",
     EMAIL_SAME_CODE_NEEDED_PROVIDED = "EMAIL_SAME_CODE_NEEDED_PROVIDED",
     EMAIL_SAME_CODE_NEEDED_CANCELED = "EMAIL_SAME_CODE_NEEDED_CANCELED",
@@ -970,12 +973,11 @@ enum socialMediaAuthenticationValuesWorkFlowStateEnum{
     INVALID_CREDENTIALS = "INVALID_CREDENTIALS",
     INVALID_CREDENTIALS_PROVIDED = "INVALID_CREDENTIALS_PROVIDED",
     INVALID_CREDENTIALS_CANCELED = "INVALID_CREDENTIALS_CANCELED",
-    NONE = "NONE"
+    SUCCESS = "SUCCESS",
 }
 
 enum socialMediaAuthenticationKeysWorkFlowStateEnum{
-    LINK_STATE = "LINK_STATE",
-    LINK_USER_INPUT = "LINK_USER_INPUT",    
+    LINK_STATE = "LINK_STATE"
 }
 
 enum termsAndConditionsFields{
