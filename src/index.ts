@@ -39,6 +39,10 @@ enum Model {
     termsAndConditions = "termsAndConditions"
 }
 
+enum messagingPayloadBaseFields {
+    eventUuid = 'eventUuid'
+}
+
 enum appTypes {
     Web = "Web",
     Mobile = "Mobile",
@@ -1060,5 +1064,6 @@ export {
     socialMediaAuthenticationKeysWorkFlowStateEnum,
     fullStackWorkFlowStateFields,
     termsAndConditionsFields,
-    termsAndConditionsStatusEnum
+    termsAndConditionsStatusEnum,
+    messagingPayloadBaseFields
 };
