@@ -39,6 +39,10 @@ enum Model {
     termsAndConditions = "termsAndConditions"
 }
 
+enum messagingPayloadBaseFields {
+    eventUuid = 'eventUuid'
+}
+
 enum appTypes {
     Web = "Web",
     Mobile = "Mobile",
@@ -950,32 +954,31 @@ enum fullStackWorkFlowStateFields{
     _id = "_id",
     personUserName = "personUserName",
     key = "key",  
-    value = "value",
+    state = "state",
+    payload = "payload",
     lastUpdateDt = "lastUpdateDt"
 }
 
 enum socialMediaAuthenticationValuesWorkFlowStateEnum{
+    STARTED = "STARTED",
+    CANCELED = "CANCELED",
+    NONE = "NONE",
     EMAIL_SAME_CODE_NEEDED = "EMAIL_SAME_CODE_NEEDED",
     EMAIL_SAME_CODE_NEEDED_PROVIDED = "EMAIL_SAME_CODE_NEEDED_PROVIDED",
-    EMAIL_SAME_CODE_NEEDED_CANCELED = "EMAIL_SAME_CODE_NEEDED_CANCELED",
     EMAIL_NEW_CODE_NEEDED = "EMAIL_NEW_CODE_NEEDED",
     EMAIL_NEW_CODE_NEEDED_PROVIDED = "EMAIL_NEW_CODE_NEEDED_PROVIDED",
-    EMAIL_NEW_CODE_NEEDED_CANCELED = "EMAIL_NEW_CODE_NEEDED_CANCELED",
     SMS_NEW_CODE_NEEDED = "SMS_NEW_CODE_NEEDED",
     SMS_NEW_CODE_NEEDED_PROVIDED = "SMS_NEW_CODE_NEEDED_PROVIDED",
-    SMS_NEW_CODE_NEEDED_CANCELED = "SMS_NEW_CODE_NEEDED_CANCELED",
     SMS_SAME_CODE_NEEDED = "SMS_SAME_CODE_NEEDED",
     SMS_SAME_CODE_NEEDED_PROVIDED = "SMS_SAME_CODE_NEEDED_PROVIDED",
-    SMS_SAME_CODE_NEEDED_CANCELED = "SMS_SAME_CODE_NEEDED_CANCELED",
     INVALID_CREDENTIALS = "INVALID_CREDENTIALS",
     INVALID_CREDENTIALS_PROVIDED = "INVALID_CREDENTIALS_PROVIDED",
-    INVALID_CREDENTIALS_CANCELED = "INVALID_CREDENTIALS_CANCELED",
-    NONE = "NONE"
+    SUCCESS = "SUCCESS",
+    FAIL = "FAIL"
 }
 
 enum socialMediaAuthenticationKeysWorkFlowStateEnum{
-    LINK_STATE = "LINK_STATE",
-    LINK_USER_INPUT = "LINK_USER_INPUT",    
+    LINK_STATE = "LINK_STATE"
 }
 
 enum termsAndConditionsFields{
@@ -1061,5 +1064,6 @@ export {
     socialMediaAuthenticationKeysWorkFlowStateEnum,
     fullStackWorkFlowStateFields,
     termsAndConditionsFields,
-    termsAndConditionsStatusEnum
+    termsAndConditionsStatusEnum,
+    messagingPayloadBaseFields
 };
