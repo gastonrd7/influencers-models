@@ -1089,12 +1089,13 @@ enum termsAndConditionsFields{
 }
 
 enum termsAndConditionsStatusEnum{
-    developing = "developing",
-    inReview = "inReview",
-    pendingApproval = "pendingApproval",
-    approved = "approved",
-    dismissed = "dismissed",
-    expired = "expired"    
+    DEVELOPING = "DEVELOPING",
+    INREVIEW = "INREVIEW",
+    PENDINGAPPROVAL = "PENDINGAPPROVAL",
+    APPROVED = "APPROVED",
+    DISMISSED = "DISMISSED",
+    EXPIRED = "EXPIRED",
+    NONE = "NONE"    
 }
 
 export {
