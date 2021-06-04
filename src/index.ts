@@ -935,7 +935,8 @@ enum personFields {
     spotCampaignCategories = "spotCampaignCategories",
     advertisingCampaignCategories = "advertisingCampaignCategories",
     potentialReferralsUpdatedDt = "potentialReferralsUpdatedDt",
-    potentialReferrals = "potentialReferrals"
+    potentialReferrals = "potentialReferrals",
+    socialMediaAccountsReadyToUse = "socialMediaAccountsReadyToUse"
 }
 
 enum personPotentialReferralsFields {
