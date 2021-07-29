@@ -562,7 +562,8 @@ enum person_credentialFields {
     lastName = "lastName",
     email = "email",
     verTermsAndConditions = "verTermsAndConditions",
-    creationDt = "creationDt"
+    creationDt = "creationDt",
+    enabled = "enabled"
 }
 
 enum person_credential_statusEnum {
@@ -571,7 +572,6 @@ enum person_credential_statusEnum {
     LINKED = "LINKED",
     FAILED = "FAILED",
     EXPIRED = "EXPIRED",
-    //TENTACLES
     MANUAL_ACTION_REQUIRED = "MANUAL_ACTION_REQUIRED",
     TERMS_SIGNATURE_REQUIRED = "TERMS_SIGNATURE_REQUIRED"
 }
