@@ -136,6 +136,7 @@ enum cronJobs {
 }
 
 enum messagingPayloadBaseFields {
+    _id = "_id",
     eventUuid = 'eventUuid'
 }
 
