@@ -654,7 +654,10 @@ enum personAvailableCampaignFields {
     resources = "resources",
     paymentType = "paymentType",
     specificTarget = "specificTarget",
-    categoryCriterias = "categoryCriterias"
+    categoryCriterias = "categoryCriterias",
+    creationDt = "creationDt",
+    startDt = 'startDt',
+    endDt = 'endDt'
 }
 
 
