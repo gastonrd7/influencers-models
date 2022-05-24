@@ -1007,7 +1007,8 @@ enum appTypeEnum {
     Web = "Web",
     Mobile = "Mobile",
     Feed = "Feed",
-    Others = "Others"
+    Others = "Others",
+    PublicPortal = "PublicPortal"
 }
 
 enum traceFields {
