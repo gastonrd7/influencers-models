@@ -309,6 +309,7 @@ enum advertisementFields {
     multimediaUri = "multimediaUri",
     sponsored = "sponsored",
     caption = "caption",
+    captionIdentifier = 'captionIdentifier',
     taggedPeople = "taggedPeople",
     status = "status",
     rejectionReason = "rejectionReason",
