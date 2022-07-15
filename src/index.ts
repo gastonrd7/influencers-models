@@ -472,7 +472,8 @@ enum postFields {
 enum socialMediaStatusEnum {
     None = "None", 
     PostRequired = "PostRequired",
-    Posting = "Posting", 
+    Posting = "Posting",
+    FailedOnGettingURL =  "FailedOnGettingURL",
     Posted = "Posted", 
     Failed = "Failed", 
     Removed = "Removed", 
