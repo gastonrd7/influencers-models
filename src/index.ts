@@ -480,6 +480,11 @@ enum socialMediaStatusEnum {
 
 }
 
+enum knownErrorsEnum {
+    None = "None", 
+    FailedOnGettingURL = "FailedOnGettingURL"
+}
+
 enum feedStatusEnum {
     Idle = "Idle",
     Fetching = "Fetching",
@@ -1187,5 +1192,6 @@ export {
     moneyDistributionStatusEnum,
     campaignPaymentStatusEnum,
     transactionItemTransactionFields,
-    transactionFields
+    transactionFields,
+    knownErrorsEnum
 };
