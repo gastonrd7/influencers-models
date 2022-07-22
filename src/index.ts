@@ -472,11 +472,17 @@ enum postFields {
 enum socialMediaStatusEnum {
     None = "None", 
     PostRequired = "PostRequired",
-    Posting = "Posting", 
+    Posting = "Posting",
+    FailedOnGettingURL =  "FailedOnGettingURL",
     Posted = "Posted", 
     Failed = "Failed", 
     Removed = "Removed", 
 
+}
+
+enum knownErrorsEnum {
+    None = "None", 
+    FailedOnGettingURL = "FailedOnGettingURL"
 }
 
 enum feedStatusEnum {
@@ -1186,5 +1192,6 @@ export {
     moneyDistributionStatusEnum,
     campaignPaymentStatusEnum,
     transactionItemTransactionFields,
-    transactionFields
+    transactionFields,
+    knownErrorsEnum
 };
