@@ -474,6 +474,8 @@ enum socialMediaStatusEnum {
     PostRequired = "PostRequired",
     Posting = "Posting",
     FailedOnGettingURL =  "FailedOnGettingURL",
+    FailedOnGettingURLSearching = "FailedOnGettingURLSearching",
+    SearchingOnGettingURLFailed = "SearchingOnGettingURLFailed",
     Posted = "Posted", 
     Failed = "Failed", 
     Removed = "Removed", 
