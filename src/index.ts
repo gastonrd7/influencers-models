@@ -407,6 +407,13 @@ enum advertisementStatusEnum {
     Approved = "Approved"
 }
 
+enum advertisementRejectionReasonsEnum {
+    MultimediaContentNoApply = "MultimediaContentNoApply",
+    MissingResources = "MissingResources",
+    CaptionNotApply = "CaptionNotApply",
+    None = "None"
+}
+
 enum postExternalFields {
     advertisementId = "advertisementId",
     platform = "platform",
@@ -1168,6 +1175,7 @@ export {
     nationalityEnum,
     religionEnum,
     advertisementStatusEnum,
+    advertisementRejectionReasonsEnum,
     personAvailableCampaignFields,
     insightGenreEnum,
     personPotentialReferralsFields,
