@@ -43,6 +43,14 @@ enum Model {
     transaction = "transaction"
 }
 
+enum General {
+    backendInstanceId = "backendinstanceid",
+}
+
+enum Messages {
+    RESET_NEEDED = "RESET_NEEDED"
+}
+
 enum transactionItemFields {
     _id = "_id",
     createdAt = "createdAt"
@@ -1203,5 +1211,7 @@ export {
     campaignPaymentStatusEnum,
     transactionItemTransactionFields,
     transactionFields,
-    knownErrorsEnum
+    knownErrorsEnum,
+    General,
+    Messages
 };
