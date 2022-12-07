@@ -677,6 +677,7 @@ enum personAvailableCampaignFields {
     brief = "brief",
     resources = "resources",
     paymentType = "paymentType",
+    productPaymentDescription = "productPaymentDescription",
     specificTarget = "specificTarget",
     categoryCriterias = "categoryCriterias",
     creationDt = "creationDt",
