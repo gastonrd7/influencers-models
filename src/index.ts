@@ -403,7 +403,9 @@ enum advertisementFields {
     instagramPrintCount = "instagramPrintCount",
     instagramCommentCount = "instagramCommentCount",
     resources = "resources",
-    moneyDistributionStatus = "moneyDistributionStatus"
+    moneyDistributionStatus = "moneyDistributionStatus",
+    paymentType = "paymentType",
+    productPaymentDescription = "productPaymentDescription",
 }
 
 enum advertisementStatusEnum {
@@ -968,7 +970,8 @@ enum personFields {
     advertisingCampaignCategories = "advertisingCampaignCategories",
     potentialReferralsUpdatedDt = "potentialReferralsUpdatedDt",
     potentialReferrals = "potentialReferrals",
-    socialMediaAccountsReadyToUse = "socialMediaAccountsReadyToUse"
+    socialMediaAccountsReadyToUse = "socialMediaAccountsReadyToUse",
+    mercadoPagoAccount = "mercadoPagoAccount"
 }
 
 enum personPotentialReferralsFields {
