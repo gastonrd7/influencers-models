@@ -483,7 +483,9 @@ enum postFields {
     instagramMentionCount = "instagramMentionCount",
     instagramHashtagCount = "instagramHashtagCount",
     instagramPrintCount = "instagramPrintCount",
-    instagramCommentCount = "instagramCommentCount",
+    instagramCommentCount = "instagramCommentCount", 
+    paymentType = "paymentType",
+    insightScanEnabled = "insightScanEnabled"
 }
 
 enum socialMediaStatusEnum {
@@ -536,6 +538,7 @@ enum insightFields {
     type = "type",
     moneyDistributionStatus = "moneyDistributionStatus",
     creationDt = "creationDt",
+    paymentType = "paymentType"
 }
 
 
