@@ -687,7 +687,8 @@ enum personAvailableCampaignFields {
     categoryCriterias = "categoryCriterias",
     creationDt = "creationDt",
     startDt = 'startDt',
-    endDt = 'endDt'
+    endDt = 'endDt',
+    customAdPrice = 'customAdPrice'
 }
 
 
