@@ -37,6 +37,7 @@ enum Model {
     socialMediaImplementation = "socialMediaImplementation",
     fullStackWorkFlowState = "fullStackWorkFlowState",
     termsAndConditions = "termsAndConditions",
+    termsAndConditionsHistoric = "termsAndConditionsHistoric",
     payment = "payment",
     transactionItem = "transactionItem",
     transactionItemTransaction = "transactionItemTransaction",
@@ -644,7 +645,13 @@ enum companyFields {
     budgetFreezed = "budgetFreezed",
     budgetSpent = "budgetSpent",
     platformStars = "platformStars",
-    customerStars = "customerStars"
+    customerStars = "customerStars",
+    cellPhone = "cellPhone",
+    socialMedia = "socialMedia",
+    webSite = "webSite",
+    instagram = "instagram",
+    facebook = "facebook",
+    twitter = "twitter"
     
 }
 
@@ -985,7 +992,14 @@ enum personFields {
     potentialReferralsUpdatedDt = "potentialReferralsUpdatedDt",
     potentialReferrals = "potentialReferrals",
     socialMediaAccountsReadyToUse = "socialMediaAccountsReadyToUse",
-    mercadoPagoAccount = "mercadoPagoAccount"
+    mercadoPagoAccount = "mercadoPagoAccount",
+    termsAndConditions = "termsAndConditions",
+    appTypes = "appTypes",
+    ip = "ip",
+    location = "location",
+    latitude = "latitude",
+    longitude = "longitude",
+    version = "version"
 }
 
 enum personPotentialReferralsFields {
@@ -1139,6 +1153,14 @@ enum termsAndConditionsFields{
     lastUpdateDt = "lastUpdateDt"
 }
 
+enum termsAndConditionsHistoricFields{
+    _id = "_id",
+    appTypes = "appTypes",
+    version = "version",
+    url = "url",
+    creationDt = "creationDt"
+}
+
 enum termsAndConditionsStatusEnum{
     DEVELOPING = "DEVELOPING",
     INREVIEW = "INREVIEW",
@@ -1215,6 +1237,7 @@ export {
     socialMediaAuthenticationKeysWorkFlowStateEnum,
     fullStackWorkFlowStateFields,
     termsAndConditionsFields,
+    termsAndConditionsHistoricFields,
     termsAndConditionsStatusEnum,
     messagingPayloadBaseFields,
     syncFields,
