@@ -153,7 +153,8 @@ enum appTypes {
     Web = "Web",
     Mobile = "Mobile",
     Feed = "Feed",
-    Others ="Others"
+    Others = "Others",
+    PublicPortal = "PublicPortal"
 }
 
 enum permission_roleFields {
@@ -178,6 +179,14 @@ enum person_companyFields {
     companyId = "companyId",
     roleId = "roleId",
     creationDt = "creationDt",
+    termsAndConditions = "termsAndConditions",
+    appTypes = "appTypes",
+    ip = "ip",
+    location = "location",
+    latitude = "latitude",
+    longitude = "longitude",
+    version = "version",
+    language = "language"
 }
 
 enum roleFields {
@@ -1000,7 +1009,8 @@ enum personFields {
     location = "location",
     latitude = "latitude",
     longitude = "longitude",
-    version = "version"
+    version = "version",
+    language = "language"
 }
 
 enum personPotentialReferralsFields {
@@ -1102,8 +1112,8 @@ enum webSessionDomainEnum {
 }
 
 enum languagesEnum {
-    English = "English",
-    Spanish = "Spanish"
+    English = "en",
+    Spanish = "es"
 }
 
 enum socialMediaImplementationFields {
@@ -1158,6 +1168,7 @@ enum termsAndConditionsHistoricFields{
     _id = "_id",
     appTypes = "appTypes",
     version = "version",
+    language = "language",
     url = "url",
     creationDt = "creationDt"
 }
