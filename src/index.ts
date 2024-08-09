@@ -863,7 +863,8 @@ enum campaignFields {
     instagramInfluencedsCardinal = "instagramInfluencedsCardinal",
     instagramInfluencersCardinal = "instagramInfluencersCardinal",
     twitterInfluencedsCardinal = "twitterInfluencedsCardinal",
-    twitterInfluencersCardinal = "twitterInfluencersCardinal"
+    twitterInfluencersCardinal = "twitterInfluencersCardinal",
+    stock = 'stock'
 }
 
 enum campaignPaymentStatusEnum {
@@ -936,6 +937,7 @@ enum personFields {
     birthDateMonth = "birthDateMonth",
     birthDateDay = "birthDateDay",
     age = "age",
+    ageReference = "ageReference",
     facebookId = "facebookId",
     instagramId = "instagramId",
     twitterId = "twitterId",
