@@ -639,6 +639,7 @@ enum companyFields {
     _id = "_id",
     name = "name",
     logo = "logo",
+    thumbnail = "thumbnail",
     active = "active",
     campaignsOnGoingCount = "campaignsOnGoingCount",
     campaignsWaitingForApprovalCount = "campaignsWaitingForApprovalCount",
