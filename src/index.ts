@@ -1162,7 +1162,8 @@ enum termsAndConditionsFields{
     platform = "platform",
     version = "version",
     status = "status",
-    lastUpdateDt = "lastUpdateDt"
+    lastUpdateDt = "lastUpdateDt",
+    language = "language"
 }
 
 enum termsAndConditionsHistoricFields{
