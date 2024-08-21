@@ -37,6 +37,7 @@ enum Model {
     socialMediaImplementation = "socialMediaImplementation",
     fullStackWorkFlowState = "fullStackWorkFlowState",
     termsAndConditions = "termsAndConditions",
+    termsAndConditionsHistoric = "termsAndConditionsHistoric",
     payment = "payment",
     transactionItem = "transactionItem",
     transactionItemTransaction = "transactionItemTransaction",
@@ -152,7 +153,8 @@ enum appTypes {
     Web = "Web",
     Mobile = "Mobile",
     Feed = "Feed",
-    Others ="Others"
+    Others = "Others",
+    PublicPortal = "PublicPortal"
 }
 
 enum permission_roleFields {
@@ -177,6 +179,14 @@ enum person_companyFields {
     companyId = "companyId",
     roleId = "roleId",
     creationDt = "creationDt",
+    termsAndConditions = "termsAndConditions",
+    appTypes = "appTypes",
+    ip = "ip",
+    location = "location",
+    latitude = "latitude",
+    longitude = "longitude",
+    version = "version",
+    language = "language"
 }
 
 enum roleFields {
@@ -629,6 +639,7 @@ enum companyFields {
     _id = "_id",
     name = "name",
     logo = "logo",
+    thumbnail = "thumbnail",
     active = "active",
     campaignsOnGoingCount = "campaignsOnGoingCount",
     campaignsWaitingForApprovalCount = "campaignsWaitingForApprovalCount",
@@ -644,7 +655,13 @@ enum companyFields {
     budgetFreezed = "budgetFreezed",
     budgetSpent = "budgetSpent",
     platformStars = "platformStars",
-    customerStars = "customerStars"
+    customerStars = "customerStars",
+    cellPhone = "cellPhone",
+    socialMedia = "socialMedia",
+    webSite = "webSite",
+    instagram = "instagram",
+    facebook = "facebook",
+    twitter = "twitter"
     
 }
 
@@ -987,7 +1004,15 @@ enum personFields {
     potentialReferralsUpdatedDt = "potentialReferralsUpdatedDt",
     potentialReferrals = "potentialReferrals",
     socialMediaAccountsReadyToUse = "socialMediaAccountsReadyToUse",
-    mercadoPagoAccount = "mercadoPagoAccount"
+    mercadoPagoAccount = "mercadoPagoAccount",
+    termsAndConditions = "termsAndConditions",
+    appTypes = "appTypes",
+    ip = "ip",
+    location = "location",
+    latitude = "latitude",
+    longitude = "longitude",
+    version = "version",
+    language = "language"
 }
 
 enum personPotentialReferralsFields {
@@ -1089,8 +1114,8 @@ enum webSessionDomainEnum {
 }
 
 enum languagesEnum {
-    English = "English",
-    Spanish = "Spanish"
+    English = "en",
+    Spanish = "es"
 }
 
 enum socialMediaImplementationFields {
@@ -1138,7 +1163,17 @@ enum termsAndConditionsFields{
     platform = "platform",
     version = "version",
     status = "status",
-    lastUpdateDt = "lastUpdateDt"
+    lastUpdateDt = "lastUpdateDt",
+    language = "language"
+}
+
+enum termsAndConditionsHistoricFields{
+    _id = "_id",
+    appTypes = "appTypes",
+    version = "version",
+    language = "language",
+    url = "url",
+    creationDt = "creationDt"
 }
 
 enum termsAndConditionsStatusEnum{
@@ -1217,6 +1252,7 @@ export {
     socialMediaAuthenticationKeysWorkFlowStateEnum,
     fullStackWorkFlowStateFields,
     termsAndConditionsFields,
+    termsAndConditionsHistoricFields,
     termsAndConditionsStatusEnum,
     messagingPayloadBaseFields,
     syncFields,
