@@ -881,7 +881,9 @@ enum campaignFields {
     instagramInfluencersCardinal = "instagramInfluencersCardinal",
     twitterInfluencedsCardinal = "twitterInfluencedsCardinal",
     twitterInfluencersCardinal = "twitterInfluencersCardinal",
-    stock = 'stock'
+    stock = 'stock',
+    virtual = 'virtual',
+    whatsappNumber = 'whatsappNumber',
 }
 
 enum campaignPaymentStatusEnum {
