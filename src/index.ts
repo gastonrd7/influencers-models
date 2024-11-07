@@ -705,7 +705,9 @@ enum personAvailableCampaignFields {
     creationDt = "creationDt",
     startDt = 'startDt',
     endDt = 'endDt',
-    customAdPrice = 'customAdPrice'
+    customAdPrice = 'customAdPrice',
+    virtual = 'virtual',
+    whatsappNumber = 'whatsappNumber'
 }
 
 
