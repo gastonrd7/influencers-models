@@ -41,7 +41,8 @@ enum Model {
     payment = "payment",
     transactionItem = "transactionItem",
     transactionItemTransaction = "transactionItemTransaction",
-    transaction = "transaction"
+    transaction = "transaction",
+    walletReSyncQueue = "walletReSyncQueue",
 }
 
 enum General {
@@ -347,6 +348,7 @@ enum advertisementFields {
     budgetFreezed = "budgetFreezed",
     moneyAvailable = "moneyAvailable",
     moneyEarned = "moneyEarned",
+    moneySpent = "moneySpent",
     zeroBudgetDt = "zeroBudgetDt",
     advertisementPrice = "advertisementPrice",
     resourceFramePrice = "resourceFramePrice",
@@ -416,6 +418,29 @@ enum advertisementFields {
     moneyDistributionStatus = "moneyDistributionStatus",
     paymentType = "paymentType",
     productPaymentDescription = "productPaymentDescription",
+    currency = "currency",
+    moneyPercentageDistributionForAuthor = "moneyPercentageDistributionForAuthor",
+    moneyForAuthor = "moneyForAuthor",
+    moneyForAdme = "moneyForAdme",
+    moneyForReferrer = "moneyForReferrer",
+    priceFactor = "priceFactor",
+    moneySpentResources = "moneySpentResources",
+}
+
+enum walletReSyncQueueFields {
+    _id = "_id",
+    personId = "personId",
+    currency = "currency",
+    status = "status",
+    startSyncingDt = "startSyncingDt",
+    lastUpdateDt = "lastUpdateDt"
+}
+
+enum walletReSyncQueueStatusEnum {
+    Pending = "Pending",
+    InProgress = "InProgress",
+    Done = "Done",
+    Failed = "Failed"
 }
 
 enum advertisementStatusEnum {
@@ -707,12 +732,17 @@ enum personAvailableCampaignFields {
     endDt = 'endDt',
     customAdPrice = 'customAdPrice',
     virtual = 'virtual',
-    whatsappNumber = 'whatsappNumber'
+    whatsappNumber = 'whatsappNumber',
+    moneyForAuthor = 'moneyForAuthor',
 }
+
+
 
 
 enum campaignFields {
     _id = "_id",
+    currency = "currency",
+    moneyPercentageDistributionForAuthor = "moneyPercentageDistributionForAuthor",
     companyId = "companyId",
     companyName = "companyName",
     companyLogo = "companyLogo",
@@ -886,6 +916,7 @@ enum campaignFields {
     stock = 'stock',
     virtual = 'virtual',
     whatsappNumber = 'whatsappNumber',
+    moneyForAuthor = 'moneyForAuthor',
 }
 
 enum campaignPaymentStatusEnum {
@@ -893,6 +924,97 @@ enum campaignPaymentStatusEnum {
     Pending = "Pending",
     Failed = "Failed"
 }
+
+enum currencyEnum {
+    // World Currencies
+    USD = 'USD',    // United States Dollar
+    EUR = 'EUR',    // Euro
+    JPY = 'JPY',    // Japanese Yen
+    GBP = 'GBP',    // British Pound Sterling
+    AUD = 'AUD',    // Australian Dollar
+    CAD = 'CAD',    // Canadian Dollar
+    CHF = 'CHF',    // Swiss Franc
+    CNY = 'CNY',    // Chinese Yuan
+    SEK = 'SEK',    // Swedish Krona
+    NZD = 'NZD',    // New Zealand Dollar
+    MXN = 'MXN',    // Mexican Peso
+    ARS = 'ARS',    // Argentine Peso
+    BRL = 'BRL',    // Brazilian Real
+    RUB = 'RUB',    // Russian Ruble
+    INR = 'INR',    // Indian Rupee
+    ZAR = 'ZAR',    // South African Rand
+    KRW = 'KRW',    // South Korean Won
+    SGD = 'SGD',    // Singapore Dollar
+    HKD = 'HKD',    // Hong Kong Dollar
+    TRY = 'TRY',    // Turkish Lira
+
+    // Cryptocurrencies
+    BTC = 'BTC',    // Bitcoin
+    ETH = 'ETH',    // Ethereum
+    BNB = 'BNB',    // Binance Coin
+    XRP = 'XRP',    // Ripple
+    ADA = 'ADA',    // Cardano
+    DOGE = 'DOGE',  // Dogecoin
+    SOL = 'SOL',    // Solana
+    DOT = 'DOT',    // Polkadot
+    MATIC = 'MATIC', // Polygon
+
+    // Stablecoins
+    USDT = 'USDT',  // Tether (USD-pegged stablecoin)
+    USDC = 'USDC',  // USD Coin (USD-pegged stablecoin)
+    BUSD = 'BUSD',  // Binance USD (USD-pegged stablecoin)
+    DAI = 'DAI',    // Dai (USD-pegged decentralized stablecoin)
+
+    // Adme Coin
+    ADME = 'ADME'   // Adme Coin
+}
+
+enum CurrencyDecimalPrecision {
+    // Monedas fuertes con 3 o 4 decimales
+    USD = 3,
+    EUR = 3,
+    JPY = 2,
+    GBP = 3,
+    AUD = 2,
+    CAD = 2,
+    CHF = 3,
+    CNY = 2,
+    SEK = 2,
+    NZD = 2,
+
+    // Monedas más débiles con 2 decimales
+    MXN = 1,
+    ARS = 1,
+    BRL = 1,
+    RUB = 1,
+    INR = 1,
+    ZAR = 1,
+    KRW = 1,
+    SGD = 2,
+    HKD = 2,
+    TRY = 1,
+
+    // Criptomonedas con alta precisión (8 decimales)
+    BTC = 8,
+    ETH = 8,
+    BNB = 8,
+    XRP = 8,
+    ADA = 8,
+    DOGE = 8,
+    SOL = 8,
+    DOT = 8,
+    MATIC = 8,
+
+    // Stablecoins (ajustadas a 6 decimales)
+    USDT = 6,
+    USDC = 6,
+    BUSD = 6,
+    DAI = 6,
+
+    // Adme Coin (8 decimales para alta precisión en la aplicación)
+    ADME = 8,
+}
+
 
 enum campaignSpecificTargetScopeFields {
     personId = "personId",
@@ -1016,7 +1138,16 @@ enum personFields {
     latitude = "latitude",
     longitude = "longitude",
     version = "version",
-    language = "language"
+    language = "language",
+    wallet = "wallet",
+}
+
+enum walletFields {
+    _id = "_id",
+    referralsGross = "referralsGross",
+    referralsNet = "referralsNet",
+    referrerGross = "referrerGross",
+    netProfit = "netProfit"
 }
 
 enum personPotentialReferralsFields {
@@ -1273,5 +1404,10 @@ export {
     transactionFields,
     knownErrorsEnum,
     General,
-    Messages
+    Messages,
+    currencyEnum,
+    walletFields,
+    CurrencyDecimalPrecision,
+    walletReSyncQueueFields,
+    walletReSyncQueueStatusEnum,
 };
