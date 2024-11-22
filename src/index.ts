@@ -347,7 +347,6 @@ enum advertisementFields {
     engagementVelocityReal = "engagementVelocityReal",
     budgetFreezed = "budgetFreezed",
     moneyAvailable = "moneyAvailable",
-    moneyEarned = "moneyEarned",
     moneySpent = "moneySpent",
     zeroBudgetDt = "zeroBudgetDt",
     advertisementPrice = "advertisementPrice",
@@ -1147,6 +1146,7 @@ enum walletFields {
     referralsGross = "referralsGross",
     referralsNet = "referralsNet",
     referrerGross = "referrerGross",
+    ownContentNet = "ownContentNet",
     netProfit = "netProfit"
 }
 
