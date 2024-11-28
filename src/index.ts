@@ -1147,6 +1147,7 @@ enum walletFields {
     referralsNet = "referralsNet",
     referrerGross = "referrerGross",
     ownContentNet = "ownContentNet",
+    bufferedMoney = "bufferedMoney",
     netProfit = "netProfit"
 }
 
