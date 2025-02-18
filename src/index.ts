@@ -543,7 +543,8 @@ enum knownErrorsEnum {
 enum feedStatusEnum {
     Idle = "Idle",
     Fetching = "Fetching",
-    Failed = "Failed"
+    Failed = "Failed",
+    NotFound = "NotFound"
 }
 
 enum historicFields {
@@ -1139,6 +1140,16 @@ enum personFields {
     version = "version",
     language = "language",
     wallet = "wallet",
+    instagramInsightsScannElegible = "instagramInsightsScannElegible",
+    instagramInsightsScannStatus = "instagramInsightsScannStatus",
+    instagramInsightsScannUpdatedDt = "instagramInsightsScannUpdatedDt",
+    instagramInsightsScannDocId = "instagramInsightsFeedDocId",
+}
+
+enum instagramInsightsScannStatusEnum {
+    Idle = "Idle",
+    Fetching = "Fetching",
+    Failed = "Failed"
 }
 
 enum walletFields {
@@ -1411,4 +1422,5 @@ export {
     CurrencyDecimalPrecision,
     walletReSyncQueueFields,
     walletReSyncQueueStatusEnum,
+    instagramInsightsScannStatusEnum
 };
