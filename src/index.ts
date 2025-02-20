@@ -1143,7 +1143,7 @@ enum personFields {
     instagramInsightsScannElegible = "instagramInsightsScannElegible",
     instagramInsightsScannStatus = "instagramInsightsScannStatus",
     instagramInsightsScannUpdatedDt = "instagramInsightsScannUpdatedDt",
-    instagramInsightsScannDocId = "instagramInsightsFeedDocId",
+    instagramInsightsScannDocId = "instagramInsightsScannDocId",
 }
 
 enum instagramInsightsScannStatusEnum {
