@@ -43,6 +43,7 @@ enum Model {
     transactionItemTransaction = "transactionItemTransaction",
     transaction = "transaction",
     walletReSyncQueue = "walletReSyncQueue",
+    event = "event",
 }
 
 enum General {
@@ -143,6 +144,29 @@ enum cronJobs {
     Money_Injection_From_Money_TransactionItemTransaction_PayTaxes = "Money_Injection_From_Money_TransactionItemTransaction_PayTaxes",
     Money_Injection_From_Money_TransactionItemTransaction_WithdrawByShopping = "Money_Injection_From_Money_TransactionItemTransaction_WithdrawByShopping",
     Money_Up_From_Core_Payment_DistributeToReferents = "Money_Up_From_Core_Payment_DistributeToReferents"
+}
+
+enum eventFields {
+    _id = "_id",
+    event = "event",
+    source = "source",
+    timestamp = "timestamp",
+    userAgent = "userAgent",
+    language = "language",
+    ip = "ip",
+    geoCountry = "geoCountry",
+    geoCity = "geoCity",
+    companyId = "companyId",
+    companyCode = "companyCode",
+    personId = "personId",
+    store = "store",
+    subsection = "subsection",
+    extra = "extra",
+}
+
+enum storeEnum {
+    ios = "ios",
+    android = "android",
 }
 
 enum messagingPayloadBaseFields {
@@ -1423,5 +1447,7 @@ export {
     CurrencyDecimalPrecision,
     walletReSyncQueueFields,
     walletReSyncQueueStatusEnum,
-    instagramInsightsScannStatusEnum
+    instagramInsightsScannStatusEnum,
+    eventFields,
+    storeEnum
 };
