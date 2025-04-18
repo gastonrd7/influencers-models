@@ -157,16 +157,29 @@ enum eventFields {
     geoCountry = "geoCountry",
     geoCity = "geoCity",
     companyId = "companyId",
+    companyName = "companyName",
     companyCode = "companyCode",
+    campaignId = "campaignId",
+    campaignName = "campaignName",
+    campaignIsVirtual = "campaignIsVirtual",
     personId = "personId",
+    personName = "personName",
+    personGenre = "personGenre",
+    personBirthday = "personBirthday",
+    personEmail = "personEmail",
+    personRegionId = "personRegionId",
+    personRegionCountryName = "personRegionCountryName",
+    personRegionStateName = "personRegionStateName",
+    personRegionCityName = "personRegionCityName",
     store = "store",
     subsection = "subsection",
     extra = "extra",
+    hydrated = "hydrated",
 }
 
 enum storeEnum {
-    ios = "ios",
-    android = "android",
+    iOS = "iOS",
+    Android = "Android",
 }
 
 enum messagingPayloadBaseFields {
@@ -687,6 +700,7 @@ enum platformEnum {
 
 enum companyFields {
     _id = "_id",
+    code = "code",
     name = "name",
     logo = "logo",
     thumbnail = "thumbnail",
